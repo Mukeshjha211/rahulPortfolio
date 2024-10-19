@@ -1,0 +1,89 @@
+.projects-section {
+    padding: 60px 20px; /* Adequate padding for breathing space */
+    text-align: center; 
+    background-color: #f4f7fa; /* Light gray background for a soft look */
+}
+
+.projects-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px; /* Space below the heading */
+    color: #333; /* Darker color for the title */
+    font-weight: 600; /* Bold title */
+    animation: fade-in 1s ease-in-out; 
+}
+
+/* Projects container styling */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid with minimum width */
+    gap: 30px; /* Space between project cards */
+}
+
+/* Individual project card styling */
+.project-card {
+    background-color: #ffffff; /* White background for project cards */
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden; /* Prevent overflow */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation on hover */
+}
+
+/* Hover effect for project card */
+.project-card:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Project image styling */
+.project-image {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Project info styling */
+.project-info {
+    padding: 20px; /* Padding inside project card */
+}
+
+/* Project title styling */
+.project-info h3 {
+    font-size: 1.5rem; /* Font size for project title */
+    margin-bottom: 10px; /* Space below title */
+    color: #007bff; /* Blue color for titles */
+    font-weight: 600; /* Bold title */
+}
+
+/* Project description styling */
+.project-info p {
+    font-size: 1rem; /* Font size for description */
+    color: #555; /* Gray color for text */
+    margin-bottom: 20px; /* Space below description */
+}
+
+/* Project links styling */
+.project-links {
+    display: flex; /* Flexbox for links */
+    justify-content: space-between; /* Space links evenly */
+}
+
+.project-links a {
+    text-decoration: none; /* Remove underline */
+    color: #007bff; /* Link color */
+    font-weight: 500; /* Slightly bold */
+    transition: color 0.3s ease; /* Color transition on hover */
+}
+
+/* Change link color on hover */
+.project-links a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* Fade-in animation for title */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

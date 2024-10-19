@@ -1,0 +1,95 @@
+.contact-section {
+    padding: 60px 20px; /* Adequate padding for breathing space */
+    background-color: #f4f7fa; /* Light gray background for a soft look */
+    border-radius: 15px; /* Rounded corners for the section */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center text */
+}
+
+.contact-section h2 {
+    font-size: 2.5rem; /* Font size for title */
+    margin-bottom: 30px; /* Space below title */
+    color: #007bff; /* Blue color for title */
+    font-weight: 600; /* Bold title */
+}
+
+.contact-form {
+    display: flex; /* Flexbox for form layout */
+    flex-direction: column; /* Vertical layout */
+    gap: 20px; /* Space between form elements */
+    max-width: 500px; /* Max width for form */
+    margin: 0 auto; /* Center the form */
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px; /* Padding for inputs */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 1rem; /* Font size for inputs */
+    transition: border-color 0.3s ease; /* Transition for border color */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.contact-form button {
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    padding: 15px 30px; /* Padding for button */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    font-weight: 500; /* Slightly bold */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transition for hover effect */
+    font-size: 1.1rem; /* Font size for button */
+}
+
+/* Hover effect for button */
+.contact-form button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.contact-details {
+    margin-top: 40px; /* Space above contact details */
+    font-size: 1rem; /* Font size for details */
+    color: #555; /* Gray color for text */
+}
+
+.contact-details p {
+    margin: 5px 0; /* Space between lines */
+}
+
+.social-links {
+    margin-top: 15px; /* Space above social links */
+    display: flex; /* Flexbox for social links */
+    justify-content: center; /* Center links */
+    gap: 15px; /* Space between links */
+}
+
+.social-links a {
+    color: #007bff; /* Blue color for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: 500; /* Slightly bold */
+    transition: color 0.3s ease; /* Transition for hover effect */
+}
+
+/* Change link color on hover */
+.social-links a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .contact-form {
+        width: 100%; /* Full width for smaller screens */
+    }
+
+    .contact-details {
+        font-size: 0.9rem; /* Smaller font size for details */
+    }
+}

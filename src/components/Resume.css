@@ -1,0 +1,53 @@
+.resume-section {
+    padding: 60px 20px; /* Adequate padding for breathing space */
+    text-align: center; 
+    background-color: #f4f7fa; /* Light gray background for a soft look */
+    border-radius: 15px; /* Rounded corners for the section */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.resume-section h2 {
+    font-size: 2.5rem; /* Font size for title */
+    margin-bottom: 20px; /* Space below title */
+    color: #007bff; /* Blue color for titles */
+    font-weight: 600; /* Bold title */
+}
+
+.resume-section p {
+    font-size: 1.2rem; /* Font size for description */
+    color: #555; /* Gray color for text */
+    margin-bottom: 40px; /* Space below description */
+}
+
+/* Resume buttons styling */
+.resume-buttons {
+    display: flex; /* Flexbox for button layout */
+    justify-content: center; /* Center buttons */
+    gap: 20px; /* Space between buttons */
+}
+
+/* Individual button styling */
+.resume-button {
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    padding: 15px 30px; /* Padding for button */
+    border-radius: 8px; /* Rounded corners for buttons */
+    text-decoration: none; /* Remove underline */
+    font-weight: 500; /* Slightly bold */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transition for hover effect */
+    font-size: 1.1rem; /* Font size for buttons */
+}
+
+/* Hover effect for buttons */
+.resume-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .resume-button {
+        padding: 12px 25px; /* Adjust padding for smaller screens */
+        font-size: 1rem; /* Smaller font size for buttons */
+    }
+}
